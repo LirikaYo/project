@@ -1,6 +1,6 @@
 :root {
     --white: #FFFFFF;
-    --accent: #333333;
+    --accent: #333333;  
     --orang: #B59571;
 }
 
@@ -16,20 +16,18 @@ body {
     min-height: 100vh;
 }
 
-/* ===== ШАПКА ===== */
+/* ===== ШАПКА (навигация справа) ===== */
 .header {
-    position: absolute;  /* Важно! Шапка поверх первого экрана */
+    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;      
+    left: auto;
+    width: auto;
     z-index: 100;
-    padding: 20px 40px;
+    padding: 30px 100px;  /* Отступы справа и сверху */
 }
 
 .header__container {
-    max-width: 1400px;
-    margin-inline: auto;
-    padding: 0 20px;
     width: 100%;
 }
 
@@ -44,8 +42,6 @@ body {
     display: flex;
     gap: 50px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .header__list-link {
@@ -62,7 +58,6 @@ body {
     padding: 10px 20px;
     background-color: var(--orang);
     text-decoration: none;
-    margin-left: 50px;
     transition: background-color 0.2s;
     white-space: nowrap;
 }
@@ -81,7 +76,7 @@ body {
     min-height: 100vh;
 }
 
-/* Левая полоса */
+/* Левая полоса (ТОЛЬКО логотип и соцсети) */
 .left-bar {
     width: 120px;
     background-color: var(--accent);
@@ -99,13 +94,10 @@ body {
     gap: 25px;
 }
 
-.left-bar__socials a {
+.left-bar__socials img {
+    width: 33.33px;
+    height: 22.23px;
     display: block;
-    transition: opacity 0.2s;
-}
-
-.left-bar__socials a:hover {
-    opacity: 0.7;
 }
 
 /* Правая часть с контентом */
@@ -113,10 +105,11 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
-    padding-left: 80px;
+    justify-content: center;  /* Центрируем контент */
     background-image: url('../images/main_background.png');
     background-size: cover;
     background-position: center;
+    padding: 0 60px;
 }
 
 .first-screen__title {
@@ -126,4 +119,5 @@ body {
     color: var(--white);
     line-height: 1.2;
     max-width: 600px;
+    text-align: left;
 }
