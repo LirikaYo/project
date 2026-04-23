@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- ШАПКА (навигация) -->
+    <!-- ШАПКА (только навигация справа) -->
     <header class="header">
         <div class="header__container">
             <div class="header__nav">
@@ -27,13 +27,13 @@
     <!-- ОСНОВНОЙ ЭКРАН (левая полоса + контент) -->
     <main class="main">
         <div class="first-screen">
-            <!-- Левая полоса с логотипом и соцсетями -->
+            <!-- Левая полоса: ТОЛЬКО логотип и соцсети -->
             <div class="left-bar">
                 <div class="left-bar__logo">
                     <img src="images/logo.svg" alt="Логотип" width="80" height="46">
                 </div>
                 <div class="left-bar__socials">
-                    <a href="#"><img src="images/YouTube_icon.svg" alt="YouTube" width="33.33" height="22.23"></a>
+                    <a href="#"><img src="images/YouTube_icon.svg" alt="YouTube" width="33.33" height="22.23"></a>                    
                     <a href="#"><img src="images/Vk_icon.svg" alt="VK" width="33.33" height="22.23"></a>
                     <a href="#"><img src="images/Telegram_icon.svg" alt="Telegram" width="33.33" height="22.23"></a>
                 </div>
@@ -41,11 +41,11 @@
 
             <!-- Контент справа -->
             <div class="first-screen__content">
-                <h1 class="first-screen__title">
-                    Видовой ресторан<br>
-                    Food'Exxe Relo<br>
-                    на Крестовском острове
-                </h1>
+                <div class="content-wrapper">
+                    <h1 class="first-screen__title">
+                        Видовой ресторан Food'Exxe Relo на Крестовском острове
+                    </h1>
+                </div>
             </div>
         </div>
     </main>
