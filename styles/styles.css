@@ -1,7 +1,7 @@
 :root {
     --white: #FFFFFF;
-    --orang: #B59571;
     --accent: #333333;
+    --orang: #B59571;
 }
 
 * {
@@ -12,23 +12,22 @@
 
 body {
     font-family: "Circe", sans-serif;
-    background-image: url('../images/main_background.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
     margin: 0;
     min-height: 100vh;
 }
 
+/* ===== ШАПКА ===== */
 .header {
-    display: flex;
-    align-items: center;
+    position: absolute;  /* Важно! Шапка поверх первого экрана */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     padding: 20px 40px;
 }
 
-.header__contanier { 
-    max-width: 1200px;
+.header__container {
+    max-width: 1400px;
     margin-inline: auto;
     padding: 0 20px;
     width: 100%;
@@ -36,42 +35,23 @@ body {
 
 .header__nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.header__right-group {
-    display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 50px;
-}
-
-.logo {
-    flex-shrink: 0;
 }
 
 .header__list {
     display: flex;
     gap: 50px;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul {
-    list-style: none;
-}
-
 .header__list-link {
-    font-family: "Circe", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0px;
     color: var(--white);
-    text-decoration: none;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -82,6 +62,7 @@ a {
     padding: 10px 20px;
     background-color: var(--orang);
     text-decoration: none;
+    margin-left: 50px;
     transition: background-color 0.2s;
     white-space: nowrap;
 }
@@ -90,9 +71,7 @@ a {
     background-color: #9e7a58;
 }
 
-
-
-
+/* ===== ПЕРВЫЙ ЭКРАН ===== */
 .main {
     min-height: 100vh;
 }
@@ -105,7 +84,7 @@ a {
 /* Левая полоса */
 .left-bar {
     width: 120px;
-    background-color: var(--accent); /* #B59571 */
+    background-color: var(--accent);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,28 +93,19 @@ a {
     flex-shrink: 0;
 }
 
-.left-bar__logo img {
-    display: block;
-}
-
-/* Блок с иконками соцсетей */
 .left-bar__socials {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.social-link {
+.left-bar__socials a {
     display: block;
     transition: opacity 0.2s;
 }
 
-.social-link:hover {
+.left-bar__socials a:hover {
     opacity: 0.7;
-}
-
-.social-link img {
-    display: block;
 }
 
 /* Правая часть с контентом */
