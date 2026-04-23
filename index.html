@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>   
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food+</title> 
+    <title>Food+</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/fonts.css">
-  </head>
-    <body>
-       <header class="header">
-            <div class="header__contanier">
-                <nav class="header__nav">
-                    <img src="images/logo.svg" alt="Логотип" width="73" height="46">
-                    <ul class="header__list">
-                        <li class="header__list-item">
-                            <a class="header__list-link" href="#">Меню</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a class="header__list-link" href="#">Доставка</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a class="header__list-link" href="#">Оплата</a>
-                        </li>
-                     </ul>
-                       <a class ="header__button" href="#">Бронь столика</a>
-                    <!-- <button class="header__button" type="button">Бронь столика</a> -->
-                </nav>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__contanier">
+        <div class="header__nav">
+            <img class="logo" src="images/logo.svg" alt="Логотип" width="80" height="46">
+            <div class="header__right-group">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">Меню</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">Доставка</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">Оплата</a>
+                    </li>
+                </ul>
+                <a class="header__button" href="#">Бронь столика</a>
             </div>
-       </header>
-    </body>
+        </div>
+    </div>
+</header>
+</body>
+
+<main class="main">
+    <div class="first-screen">
+        <!-- Левая полоса с логотипом и соцсетями -->
+        <div class="left-bar">
+            <div class="left-bar__logo">
+                <img src="images/logo.svg" alt="Логотип" width="80" height="46">
+            </div>
+            
+            <div class="left-bar__socials">
+                <a href="#" class="social-link">
+                    <img src="images/Telegram_icon.svg" alt="Telegram" width="24" height="24">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images/Vk_icon.svg" alt="VK" width="24" height="24">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images/YouTube_icon.svg" alt="YouTube" width="24" height="24">
+                </a>
+            </div>
+        </div>
+
+        <!-- Контент справа -->
+        <div class="first-screen__content">
+            <h1 class="first-screen__title">
+                Видовой ресторан<br>
+                Food'Exxe Relo<br>
+                на Крестовском острове
+            </h1>
+        </div>
+    </div>
+</main>
+
 </html>
