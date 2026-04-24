@@ -24,7 +24,7 @@ body {
     left: auto;
     width: auto;
     z-index: 100;
-    padding: 30px 100px;  /* Отступы справа и сверху */
+    padding: 30px 100px;  
 }
 
 .header__container {
@@ -105,7 +105,7 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;  /* Центрируем контент */
+    justify-content: center;  
     background-image: url('../images/main_background.png');
     background-size: cover;
     background-position: center;
