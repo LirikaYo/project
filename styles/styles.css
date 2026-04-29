@@ -27,8 +27,9 @@ body {
     padding: 30px 100px;  
 }
 
-.header__container {
+[class*="__container"]{
     width: 100%;
+    margin-inline: auto;
 }
 
 .header__nav {
@@ -71,53 +72,145 @@ body {
     min-height: 100vh;
 }
 
+.hero {
+    padding-block: 0px;
+}
+
+.hero__container{
+    position: relative;
+}
+
 .first-screen {
     display: flex;
     min-height: 100vh;
 }
 
-/* Левая полоса (ТОЛЬКО логотип и соцсети) */
+/* ===== ЛЕВАЯ ПОЛОСА ===== */
 .left-bar {
     width: 120px;
     background-color: var(--accent);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
     flex-shrink: 0;
+    min-height: 100vh;
+}
+
+.left-bar__logo {
+    margin-top: 30px;
+}
+
+.left-bar__logo img {
+    display: block;
+    max-width: 80px;
+    height: auto;
+}
+
+.left-bar__stripes {
+    margin-top: 20px;
+}
+
+.left-bar__stripes img {
+    display: block;
+    width: auto;
+    height: auto;
 }
 
 .left-bar__socials {
+    margin-top: auto;
+    margin-bottom: 41px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 25px;
 }
 
-.left-bar__socials img {
-    width: 33.33px;
-    height: 22.23px;
-    display: block;
+.left-bar__socials a {
+    display: flex;
+    justify-content: center;
+    padding: 0 43px;
 }
 
-/* Правая часть с контентом */
+.left-bar__socials img {
+    display: block;
+    object-fit: contain;
+}
+
+/* ===== ПРАВАЯ ЧАСТЬ С ТЕКСТОМ ===== */
 .first-screen__content {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
     background-image: url('../images/main_background.png');
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+/* Текст с точными отступами */
+.first-screen__title { 
+    position: absolute;
+    padding-block: 670px;
+    left: 350px;
+    right: auto;
+    bottom: auto;
+    
+    /* Настройки текста */
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 140%;
+    letter-spacing: normal;
+    color: var(--white);
+    
+    max-width: 856px;
+    margin: 0;
+}
+
+/* ===== СЕКЦИЯ О РЕСТОРАНЕ ===== */
+.about {
+    padding: 120px;
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 60px;
 }
 
-.first-screen__title {
-    font-family: "Circe", sans-serif;
-    font-size: 52px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1.2;
+.about__content {
     max-width: 600px;
-    text-align: left;
+}
+
+.about__subtitle {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about__title {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--accent);
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    justify-content: space-between;
+    flex-direction: row;
+     align-items: center;
+}
+
+.about__text {
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--accent);
+    margin-bottom: 16px;
+    max-width: 526px;
+    margin: 0;
 }
