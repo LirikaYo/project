@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== ШАПКА (навигация справа) ===== */
+/* Шапка */
 .header {
     position: absolute;
     top: 0;
@@ -67,7 +67,7 @@ body {
     background-color: #9e7a58;
 }
 
-/* ===== ПЕРВЫЙ ЭКРАН ===== */
+/* Первая страница */
 .main {
     min-height: 100vh;
 }
@@ -85,7 +85,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== ЛЕВАЯ ПОЛОСА ===== */
+/* Левая полоса */
 .left-bar {
     width: 120px;
     background-color: var(--accent);
@@ -136,8 +136,7 @@ body {
     object-fit: contain;
 }
 
-/* ===== ПРАВАЯ ЧАСТЬ С ТЕКСТОМ ===== */
-.first-screen__content {
+/* Часть с текстом */
     flex: 1;
     background-image: url('../images/main_background.png');
     background-size: cover;
@@ -145,7 +144,6 @@ body {
     position: relative;
 }
 
-/* Текст с точными отступами */
 .first-screen__title { 
     position: absolute;
     padding-block: 670px;
@@ -153,7 +151,6 @@ body {
     right: auto;
     bottom: auto;
     
-    /* Настройки текста */
     font-family: "Circe", sans-serif;
     font-weight: 700;
     font-size: 54px;
@@ -165,7 +162,7 @@ body {
     margin: 0;
 }
 
-/* ===== СЕКЦИЯ О РЕСТОРАНЕ ===== */
+/* О ресторане */
 .about {
     padding: 120px;
 }
