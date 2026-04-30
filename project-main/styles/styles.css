@@ -1,0 +1,214 @@
+:root {
+    --white: #FFFFFF;
+    --accent: #333333;  
+    --orang: #B59571;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Circe", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Шапка */
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;      
+    left: auto;
+    width: auto;
+    z-index: 100;
+    padding: 30px 100px;  
+}
+
+[class*="__container"]{
+    width: 100%;
+    margin-inline: auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.header__list-link {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header__button {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white);
+    padding: 10px 20px;
+    background-color: var(--orang);
+    text-decoration: none;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.header__button:hover {
+    background-color: #9e7a58;
+}
+
+/* Первая страница */
+.main {
+    min-height: 100vh;
+}
+
+.hero {
+    padding-block: 0px;
+}
+
+.hero__container{
+    position: relative;
+}
+
+.first-screen {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Левая полоса */
+.left-bar {
+    width: 120px;
+    background-color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    min-height: 100vh;
+}
+
+.left-bar__logo {
+    margin-top: 30px;
+}
+
+.left-bar__logo img {
+    display: block;
+    max-width: 80px;
+    height: auto;
+}
+
+.left-bar__stripes {
+    margin-top: 20px;
+}
+
+.left-bar__stripes img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.left-bar__socials {
+    margin-top: auto;
+    margin-bottom: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.left-bar__socials a {
+    display: flex;
+    justify-content: center;
+    padding: 0 43px;
+}
+
+.left-bar__socials img {
+    display: block;
+    object-fit: contain;
+}
+
+/* Часть с текстом */
+.first-screen {
+    flex: 1;
+    background-image: url('../images/main_background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.first-screen__title { 
+    position: absolute;
+    padding-block: 670px;
+    left: 350px;
+    right: auto;
+    bottom: auto;
+    
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 140%;
+    letter-spacing: normal;
+    color: var(--white);
+    
+    max-width: 856px;
+    margin: 0;
+}
+
+/* О ресторане */
+.about {
+    padding: 120px;
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.about__content {
+    max-width: 600px;
+}
+
+.about__subtitle {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about__title {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--accent);
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    justify-content: space-between;
+    flex-direction: row;
+     align-items: center;
+}
+
+.about__text {
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--accent);
+    margin-bottom: 16px;
+    max-width: 526px;
+    margin: 0;
+}
