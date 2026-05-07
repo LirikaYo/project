@@ -354,6 +354,8 @@ body {
 
 /* доставка */
 
+/* ===== СЕКЦИЯ ДОСТАВКИ ===== */
+
 .delivery {
     width: 1076px;
     height: 458px;
@@ -372,20 +374,76 @@ body {
 }
 
 .delivery__row {
-    position: relative;
-    margin-top: 80px;
-    padding-left: 220px;
-     display: flex;
+    display: flex;
     justify-content: space-between;
     gap: 24px;
-}
-
-.about__text-wrapper {
-    width: 526px;
-    height: 225px;
+    padding-left: 220px;
+    margin-top: 80px;
 }
 
 .delivery__title {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
     width: 306px;
     height: 154px;
+    margin: 0;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.delivery__text-wrapper {
+    width: 526px;
+}
+
+.delivery__text {
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--accent);
+    margin: 0;
+}
+
+/* Кнопки — отступ сверху 60px от текста */
+.delivery__buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+    margin-left: auto; 
+    width: 414px; 
+    height: 58px;
+    margin-right: 112px; 
+}
+
+.delivery__buttons-first,
+.delivery__buttons-second {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white);
+    padding: 15px 30px;
+    background-color: var(--orang);
+    text-decoration: none;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.delivery__buttons-second {
+    background-color: transparent;
+    color: var(--accent);
+    border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.delivery__buttons-first:hover {
+    background-color: #9e7a58;
+}
+
+.delivery__buttons-second:hover {
+    background-color: var(--orang);
+    color: var(--white);
 }
