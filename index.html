@@ -4,26 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food'Exxe Relo</title>
+    <meta name="description" content="Ресторан Food Exxe Relo на Крестовском острове в Санкт-Петербурге">
+    <title>Food Exxe Relo</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 
 <body>
     <main class="main">
-        <div class="first-screen">
 
+        <div class="first-screen">
             <aside class="left-bar">
                 <div class="left-bar__logo">
-                    <img src="images/logo.svg" alt="Logo">
+                    <img src="images/logo.svg" alt="Логотип ресторана">
                 </div>
                 <div class="left-bar__stripes">
-                    <img src="images/stripes.svg" alt="Полосы">
+                    <img src="images/stripes.svg" alt="Декоративные полосы">
                 </div>
                 <div class="left-bar__socials">
-                    <a href="#"><img src="images/YouTube_icon.svg" alt="YouTube" width="33" height="22"></a>
-                    <a href="#"><img src="images/Vk_icon.svg" alt="Vk" width="33" height="20"></a>
-                    <a href="#"><img src="images/Telegram_icon.svg" alt="Telegram" width="22" height="18"></a>
+                    <a href="#" aria-label="YouTube">
+                        <img src="images/YouTube_icon.svg" alt="YouTube" width="33" height="22">
+                    </a>
+                    <a href="#" aria-label="VK">
+                        <img src="images/Vk_icon.svg" alt="VK" width="33" height="20">
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                        <img src="images/Telegram_icon.svg" alt="Telegram" width="22" height="18">
+                    </a>
                 </div>
             </aside>
 
@@ -41,7 +48,7 @@
                     </div>
                 </header>
                 <h1 class="hero__title">
-                    Видовой ресторан Food Exxe Relo
+                    Видовой ресторан Food Exxe Relo
                     на Крестовском острове
                 </h1>
             </section>
@@ -57,7 +64,9 @@
                 </div>
 
                 <div class="about__row">
-                    <h3 class="about__title section__title-large">Food<br> Exxe<br> Relo</h3>
+                    <h3 class="about__title section__title-large">
+                        Food<br> Exxe<br> Relo
+                    </h3>
                     <div class="about__text-wrapper section__text-wrapper">
                         <p class="about__text section__text">
                             Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus
@@ -107,15 +116,14 @@
 
                     <div class="menu__pictures">
                         <div class="menu__picture">
-                            <img class="picture" src="images/main_menu.jpg" alt="Меню">
+                            <img class="picture" src="images/main_menu.jpg" alt="Основное меню ресторана">
                             <div class="menu__under-text-first">
                                 <h4 class="under__pictures">Основное меню</h4>
                                 <span class="right__strip"></span>
                             </div>
                         </div>
-
                         <div class="menu__picture">
-                            <img class="picture-second" src="images/bar_menu.jpg" alt="Меню">
+                            <img class="picture-second" src="images/bar_menu.jpg" alt="Барная карта ресторана">
                             <div class="menu__under-text-second">
                                 <h4 class="under__pictures">Барная карта</h4>
                                 <span class="right__strip"></span>
@@ -126,92 +134,134 @@
             </div>
         </section>
 
-<section class="delivery">
-    <div class="delivery__container section-container">
-        
-        <div class="delivery__header section-header">
-            <h2 class="delivery__subtitel section__subtitle">Доставка</h2>
-            <div class="delivery__strip section__strip">
-                <span class="delivery__strip-line section__strip-line"></span>
-            </div>
-        </div>
+        <section class="delivery">
+            <div class="delivery__container section-container">
+                <div class="delivery__header section-header">
+                    <h2 class="delivery__subtitle section__subtitle">Доставка</h2>
+                    <div class="delivery__strip section__strip">
+                        <span class="delivery__strip-line section__strip-line"></span>
+                    </div>
+                </div>
 
-        <div class="delivery__content">  <!-- ← исправлено: dlivery → delivery -->
-            <div class="delivery__row">
-                <h3 class="delivery__title section__title-large">Служба доставки</h3>
-                <div class="delivery__text-wrapper section__text-wrapper">
-                    <p class="delivery__text section__text">
-                        Phasellus diam, ultrices lobortis integer et. Diam, purus vel sagittis, 
-                        non, a. In risus, venenatis enim vitae mauris aliquet orci. Consectetur 
-                        nibh interdum nullam ut lobortis eu etiam sem. Et in vitae 
-                        pellentesque non, lectus orci natoque faucibus suspendisse. Semper 
-                        aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat cras 
-                        placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis 
-                        eleifend in fringilla. Egestas cursus imperdiet cursus dui, nulla id 
-                        massa. Hendrerit nam enim semper porttitor imperdiet diam semper. 
-                        Nulla sit etiam cras morbi enim elementum euismod sapien.
-                    </p>
-                    <!-- Кнопки ВНУТРИ text-wrapper, чтобы были под текстом -->
-                    <div class="delivery__buttons">
-                        <a href="#" class="delivery__buttons-first">Подробнее</a>
-                        <a href="#" class="delivery__buttons-second">Условие доставки</a>
+                <div class="delivery__content">
+                    <div class="delivery__row">
+                        <h3 class="delivery__title section__title-large">Служба доставки</h3>
+                        <div class="delivery__text-wrapper section__text-wrapper">
+                            <p class="delivery__text section__text">
+                                Phasellus diam, ultrices lobortis integer et. Diam, purus vel sagittis,
+                                non, a. In risus, venenatis enim vitae mauris aliquet orci. Consectetur
+                                nibh interdum nullam ut lobortis eu etiam sem. Et in vitae
+                                pellentesque non, lectus orci natoque faucibus suspendisse. Semper
+                                aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat cras
+                                placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis
+                                eleifend in fringilla. Egestas cursus imperdiet cursus dui, nulla id
+                                massa. Hendrerit nam enim semper porttitor imperdiet diam semper.
+                                Nulla sit etiam cras morbi enim elementum euismod sapien.
+                            </p>
+                            <div class="delivery__buttons">
+                                <a href="#" class="delivery__buttons-first">Подробнее</a>
+                                <a href="#" class="delivery__buttons-second">Условие доставки</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section class="contacts">
+        <section class="contacts">
+            <div class="contacts__container section-container">
+                <div class="contacts__header section-header">
+                    <h2 class="contacts__subtitle section__subtitle">Контакты</h2>
+                    <div class="contacts__strip section__strip">
+                        <span class="contacts__strip-line section__strip-line"></span>
+                    </div>
+                </div>
 
-    <div class="contacts__container section-container">
+                <div class="contacts__content">
+                    <div class="contacts__time">
+                        <div class="time__one">
+                            <div class="time-value-one">
+                                <span class="time-number">2</span>
+                                <span class="time-unit">мин</span>
+                            </div>
+                            <p class="under__text-first">
+                                из центра<br>Санкт-Петербурга
+                            </p>
+                        </div>
 
-        <div class="contacts__header section-header">
-            <h2 class="contacts__subtitel sections__subtitel">Контакты</h2>
-            <div class="delivery__strip section__strip">
-                <span class="contacts__strip-line section__strip-line"></span>
+                        <div class="time__two">
+                            <div class="time-value-two">
+                                <span class="time-number">12</span>
+                                <span class="time-unit">мин</span>
+                            </div>
+                            <p class="under__text-second">
+                                из города<br>Зеленогорск
+                            </p>
+                        </div>
+
+                        <div class="time__three">
+                            <div class="time-value-three">
+                                <span class="time-number">42</span>
+                                <span class="time-unit">мин</span>
+                            </div>
+                            <p class="under__text-third">
+                                из аэропорта<br>Пулково
+                            </p>
+                        </div>
+
+                        <div class="time__four">
+                            <div class="time-value-four">
+                                <span class="time-number">52</span>
+                                <span class="time-unit">мин</span>
+                            </div>
+                            <p class="under__text-fourth">
+                                из города<br>Павловск
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__info">
+                        <div class="contacts__photo"></div>
+                        <div class="map-content">
+                            <div class="label__and__phone">
+                                <div class="path__with-label">
+                                    <img class="label" src="images/label.svg" alt="Метка" width="12" height="15">
+                                    <p class="contacts__path">Санкт-Петербург, Северная дорога, 11</p>
+                                </div>
+                                <div class="number__with-phone">
+                                    <img class="telephone" src="images/telephone.svg" alt="Телефон" width="13" height="13">
+                                    <a href="tel:+79217777777" class="number">+7 (921) 777-77-77</a>
+                                </div>
+                            </div>
+
+                            <h3 class="opening__hours">Время работы</h3>
+                            <p class="Sun-Thu">
+                                <span class="days">Вск-Чт</span>
+                                <span class="time-range">с 12:00 до 23:00</span>
+                            </p>
+                            <p class="Fri-Sat">
+                                <span class="days">Пт-Сб</span>
+                                <span class="time-range">с 12:00 до 03:00</span>
+                            </p>
+
+                            <div class="contacts__buttons">
+                                <a href="#" class="contacts__buttons-first">Бронь столика</a>
+                                <a href="#" class="contacts__buttons-second">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="contacts__content">
-            
-            <div class="contacts__time">
-
-                <div class="time__one">
-                    <h3 class="time__first">2 мин</h3>
-                    <p class="under__text-first">
-                        из центра Санкт-Петербурга
-                    </p>
-                </div>
-
-                <div class="time__two">
-                    <h3 class="time__second">12 мин</h3>
-                    <p class="under__text-second">
-
-                    </p>
-                </div>
-
-                <div class="time__three">
-                    <h3 class="time__third"></h3>
-                    <p class="under__text-third">
-
-                    </p>
-                </div>
-
-                <div class="time__four">
-                    <h3 class="time__fourth"></h3>
-                    <p class="under__text-fourth">
-
-                    </p>
-                </div>
-
-            </div>
-        
-        </div>
-    </div>
-</section>
-
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <img class="footer__logo" src="images/logo.svg" alt="Логотип ресторана">
+            <p class="footer__policy">Политика конфиденциальности</p>
+            <p class="footer__design">Дизайн d-e-n.ru</p>
+        </div>
+    </footer>
 </body>
 
 </html>
