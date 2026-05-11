@@ -571,18 +571,16 @@ body {
 /* ===== Подвал ===== */
 .footer {
     width: 100%;
-    max-width: 1920px;
-    height: 120px;
     background-color: var(--accent);
+}
+
+.footer__container {
+    max-width: 1920px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-}
-
-.footer__content {
-    display: flex;
-    align-items: center;
-    margin-left: 312px;
+    height: 120px;
+    padding-inline: 312px;  
 }
 
 .footer__logo {
