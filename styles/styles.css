@@ -22,7 +22,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* контейнера */
+/* контейнер */
 .section-container {
     max-width: 100%;
     margin: 0 auto;
@@ -34,7 +34,7 @@ body {
     margin-right: var(--section-margin-right);
 }
 
-/* header */
+/* header для всех */
 .section-header {
     display: flex;
     align-items: center;
@@ -96,8 +96,7 @@ body {
     margin: 0 auto;
     display: flex;
     background-image: url('../images/main_background.png');
-    background-size: contain;  
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -261,7 +260,7 @@ body {
     width: 526px;
 }
 
-/* Фото */
+/* фото */
 .menu__pictures {
     display: flex;
     gap: 104px;
@@ -442,7 +441,7 @@ body {
     color: var(--accent);
 }
 
-/* Карта и квадрат */
+/* карта и квадрат */
 .contacts__info {
     position: relative;
     width: 746px;
@@ -479,16 +478,14 @@ body {
     gap: 20px;
 }
 
-.path__with-label,
-.number__with-phone {
+.path__with-label, .number__with-phone {
     display: flex;
     align-items: center;
     gap: 15px;
     width: 336px;
 }
 
-.contacts__path,
-.number {
+.contacts__path, .number {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -534,15 +531,14 @@ body {
     color: var(--white);
 }
 
-/* Кнопки контактов */
+/* кнопки контактов */
 .contacts__buttons {
     display: flex;
     gap: 20px;
     margin-top: 30px;
 }
 
-.contacts__buttons-first,
-.contacts__buttons-second {
+.contacts__buttons-first, .contacts__buttons-second {
     font-weight: 700;
     font-size: 16px;
     padding: 10px 20px;
@@ -568,19 +564,21 @@ body {
     white-space: nowrap;
 }
 
-/* ===== Подвал ===== */
+/* подвал */
 .footer {
     width: 100%;
-    background-color: var(--accent);
-}
-
-.footer__container {
     max-width: 1920px;
+    height: 120px;
+    background-color: var(--accent);
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 120px;
-    padding-inline: 312px;  
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    margin-left: 312px;
 }
 
 .footer__logo {
