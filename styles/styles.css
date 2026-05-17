@@ -601,3 +601,776 @@ body {
     line-height: 140%;
     color: var(--white);
 }
+/* ========== МЕДИА-АДАПТАЦИЯ ========== */
+
+/* Планшеты (768px - 1199px) */
+@media (max-width: 1199px) {
+    /* Корректировка переменных отступов */
+    .about, .menu, .delivery, .contacts {
+        margin-block: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    /* Заголовки */
+    .section__title-large {
+        font-size: 48px;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    /* Первый экран */
+    .hero {
+        padding-top: 400px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .hero__header {
+        padding: 20px 30px;
+    }
+
+    .hero__title {
+        font-size: 42px;
+        width: auto;
+        max-width: 600px;
+    }
+
+    .hero__nav {
+        gap: 30px;
+    }
+
+    .hero__list {
+        gap: 30px;
+    }
+
+    /* Левая панель */
+    .left-bar {
+        width: 80px;
+    }
+
+    .left-bar__logo img,
+    .left-bar__stripes img {
+        max-width: 40px;
+    }
+
+    /* Секция about */
+    .about__row {
+        padding-left: 0;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .about__text-wrapper {
+        width: auto;
+        max-width: 500px;
+        height: auto;
+    }
+
+    /* Секция menu */
+    .menu__content {
+        margin-left: 0;
+        gap: 60px;
+    }
+
+    .menu__row {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .menu__text-wrapper {
+        width: auto;
+        max-width: 500px;
+    }
+
+    .menu__pictures {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        padding-inline: 20px;
+    }
+
+    .menu__picture::before {
+        width: 336px;
+        height: 240px;
+    }
+
+    /* Секция delivery */
+    .delivery__content {
+        margin-left: 0;
+    }
+
+    .delivery__row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .delivery__title {
+        width: auto;
+        height: auto;
+    }
+
+    .delivery__text-wrapper {
+        width: auto;
+        max-width: 500px;
+    }
+
+    .delivery__buttons {
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    /* Секция contacts */
+    .contacts__content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contacts__time {
+        width: 100%;
+        margin-top: 0;
+        gap: 30px;
+    }
+
+    .contacts__info {
+        width: 100%;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .contacts__photo {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 300px;
+    }
+
+    .map-content {
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 416px;
+        height: auto;
+    }
+
+    /* Подвал */
+    .footer__content {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer__logo {
+        margin-right: 0;
+    }
+
+    .footer__policy {
+        margin-right: 0;
+    }
+}
+
+/* Мобильные устройства (320px - 767px) */
+@media (max-width: 767px) {
+    /* Отступы */
+    .about, .menu, .delivery, .contacts {
+        margin-block: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Заголовки */
+    .section__title-large {
+        font-size: 32px;
+    }
+
+    .section__subtitle {
+        font-size: 16px;
+    }
+
+    .section-header {
+        gap: 15px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .section__strip-line {
+        width: 40px;
+    }
+
+    /* Текст */
+    .section__text {
+        font-size: 14px;
+    }
+
+    /* Первый экран */
+    .first-screen {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left-bar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .left-bar__logo {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .left-bar__stripes {
+        margin-top: 0;
+    }
+
+    .left-bar__socials {
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .hero {
+        padding-top: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 100px;
+    }
+
+    .hero__header {
+        position: absolute;
+        padding: 15px 20px;
+    }
+
+    .hero__nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    .hero__list {
+        flex-direction: column;
+        gap: 10px;
+        text-align: right;
+    }
+
+    .hero__list-link {
+        font-size: 14px;
+    }
+
+    .hero__button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    /* Секция about */
+    .about__row {
+        gap: 30px;
+    }
+
+    .about__title {
+        width: auto;
+        height: auto;
+    }
+
+    /* Секция menu */
+    .menu__content {
+        gap: 40px;
+    }
+
+    .menu__row {
+        gap: 30px;
+    }
+
+    .menu__pictures {
+        gap: 40px;
+    }
+
+    .menu__picture::before {
+        display: none;
+    }
+
+    .menu__picture img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .under__pictures {
+        font-size: 16px;
+    }
+
+    .menu__under-text-first,
+    .menu__under-text-second {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .right__strip {
+        width: 40px;
+    }
+
+    /* Секция delivery */
+    .delivery__row {
+        gap: 30px;
+    }
+
+    .delivery__title {
+        font-size: 28px;
+    }
+
+    .delivery__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .delivery__buttons-first,
+    .delivery__buttons-second {
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Секция contacts */
+    .contacts__time {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .time__one,
+    .time__two,
+    .time__three,
+    .time__four {
+        width: 100%;
+    }
+
+    .time-number {
+        font-size: 48px;
+    }
+
+    .time-unit {
+        font-size: 24px;
+    }
+
+    .under__text-first,
+    .under__text-second,
+    .under__text-third,
+    .under__text-fourth {
+        font-size: 14px;
+    }
+
+    .contacts__info {
+        min-height: auto;
+    }
+
+    .contacts__photo {
+        height: 200px;
+        background-position: center;
+    }
+
+    .map-content {
+        padding: 20px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .path__with-label,
+    .number__with-phone {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .contacts__path,
+    .number {
+        font-size: 14px;
+    }
+
+    .opening__hours {
+        font-size: 18px;
+    }
+
+    .days {
+        font-size: 14px;
+        width: 50px;
+    }
+
+    .time-range {
+        font-size: 14px;
+    }
+
+    .contacts__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contacts__buttons-first,
+    .contacts__buttons-second {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Подвал */
+    .footer {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .footer__content {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer__policy,
+    .footer__design {
+        font-size: 12px;
+    }
+}
+
+/* Очень маленькие экраны (320px и меньше) */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 24px;
+    }
+
+    .section__title-large {
+        font-size: 28px;
+    }
+
+    .hero__header {
+        padding: 15px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about, .menu, .delivery, .contacts {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .menu__picture img {
+        max-width: 240px;
+    }
+
+    .under__pictures {
+        font-size: 14px;
+    }
+}
+/* ========== БОЛЬШИЕ ЭКРАНЫ (телевизоры, 2K, 4K) ========== */
+
+/* Для экранов шире 1920px (телевизоры, 2K) */
+@media (min-width: 1921px) and (max-width: 2560px) {
+    /* Увеличиваем контейнеры */
+    .first-screen {
+        max-width: 2560px;
+    }
+
+    .about, .menu, .delivery, .contacts {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+        width: 90% !important;
+    }
+
+    /* Увеличиваем левую панель */
+    .left-bar {
+        width: 140px;
+    }
+
+    .left-bar__socials a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .left-bar__socials img {
+        transform: scale(1.2);
+    }
+
+    /* Увеличиваем hero */
+    .hero {
+        padding-top: 800px;
+        padding-left: 400px;
+    }
+
+    .hero__title {
+        font-size: 72px;
+        width: 1000px;
+    }
+
+    .hero__header {
+        padding: 40px 150px;
+    }
+
+    .hero__list-link {
+        font-size: 20px;
+    }
+
+    .hero__button {
+        font-size: 20px;
+        padding: 12px 28px;
+    }
+
+    /* Крупные заголовки */
+    .section__title-large {
+        font-size: 80px;
+    }
+
+    .section__subtitle {
+        font-size: 24px;
+    }
+
+    .section__text {
+        font-size: 22px;
+    }
+
+    /* Полоска */
+    .section__strip-line {
+        width: 80px;
+        height: 4px;
+    }
+
+    /* Секция about */
+    .about__row {
+        gap: 180px;
+        padding-left: 0;
+    }
+
+    .about__text-wrapper {
+        max-width: 700px;
+    }
+
+    /* Секция menu */
+    .menu__content {
+        margin-left: 0;
+    }
+
+    .menu__row {
+        gap: 180px;
+    }
+
+    .menu__pictures {
+        gap: 150px;
+    }
+
+    .menu__picture::before {
+        width: 500px;
+        height: 280px;
+        border-width: 3px;
+    }
+
+    .menu__picture img {
+        width: 400px;
+        height: 280px;
+    }
+
+    .under__pictures {
+        font-size: 24px;
+    }
+
+    .right__strip {
+        width: 80px;
+        height: 4px;
+    }
+
+    /* Секция delivery */
+    .delivery__row {
+        gap: 80px;
+    }
+
+    .delivery__text-wrapper {
+        max-width: 700px;
+    }
+
+    .delivery__buttons-first,
+    .delivery__buttons-second {
+        font-size: 24px;
+        padding: 18px 36px;
+    }
+
+    /* Секция contacts */
+    .contacts__content {
+        gap: 80px;
+    }
+
+    .time-number {
+        font-size: 80px;
+    }
+
+    .time-unit {
+        font-size: 40px;
+    }
+
+    .under__text-first,
+    .under__text-second,
+    .under__text-third,
+    .under__text-fourth {
+        font-size: 20px;
+    }
+
+    .map-content {
+        width: 500px;
+        height: 400px;
+        padding: 50px;
+    }
+
+    .contacts__path,
+    .number {
+        font-size: 18px;
+    }
+
+    .opening__hours {
+        font-size: 24px;
+    }
+
+    .days {
+        font-size: 20px;
+        width: 65px;
+    }
+
+    .time-range {
+        font-size: 18px;
+    }
+
+    .contacts__buttons-first,
+    .contacts__buttons-second {
+        font-size: 18px;
+        padding: 12px 24px;
+        width: 180px;
+    }
+
+    /* Подвал */
+    .footer {
+        height: 150px;
+    }
+
+    .footer__content {
+        margin-left: auto;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .footer__logo {
+        width: 100px;
+    }
+
+    .footer__policy,
+    .footer__design {
+        font-size: 18px;
+    }
+}
+
+/* Для очень больших экранов (4K и более, 2560px+) */
+@media (min-width: 2561px) {
+    /* Основной контент по центру с ограничением */
+    body {
+        background-color: #1a1a1a; /* фон по бокам */
+    }
+
+    .first-screen,
+    .footer {
+        max-width: 2560px;
+        margin: 0 auto;
+    }
+
+    .about, .menu, .delivery, .contacts {
+        max-width: 1600px;
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Ещё увеличиваем заголовки */
+    .section__title-large {
+        font-size: 96px;
+    }
+
+    .section__subtitle {
+        font-size: 28px;
+    }
+
+    .section__text {
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: 88px;
+        width: 1200px;
+    }
+
+    .hero {
+        padding-top: 900px;
+        padding-left: 450px;
+    }
+
+    .hero__list-link {
+        font-size: 22px;
+    }
+
+    .hero__button {
+        font-size: 22px;
+        padding: 14px 32px;
+    }
+
+    /* Картинки меню */
+    .menu__picture::before {
+        width: 580px;
+        height: 320px;
+    }
+
+    .menu__picture img {
+        width: 480px;
+        height: 320px;
+    }
+
+    /* Кнопки */
+    .delivery__buttons-first,
+    .delivery__buttons-second {
+        font-size: 28px;
+        padding: 20px 40px;
+    }
+
+    /* Цифры времени */
+    .time-number {
+        font-size: 96px;
+    }
+
+    .time-unit {
+        font-size: 48px;
+    }
+
+    /* Подвал */
+    .footer__policy,
+    .footer__design {
+        font-size: 20px;
+    }
+}
